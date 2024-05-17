@@ -1,0 +1,49 @@
+1)CSS stands for Cascading Style Sheet. 
+
+Types of selector:
+id selector
+class selector
+universal selector
+element selector
+
+
+
+2)Its like a box that wraps around every html element. It incudes margin, border, padding , content.
+
+3)<center>
+    <form action="">
+        <label for="firstname">First Name</label>
+        <input type="text">
+<br>
+        <label for="middlename">Middle Name</label>
+        <input type="text">
+<br>
+        <label for="lastname">Last Name</label>
+        <input type="text">
+<br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id=""> Male      
+        <input type="radio" name="gender" id="">  Female
+        <input type="radio" name="gender" id="">Other
+
+<br>
+        <label for="">Course</label>
+        <select name="" id="">
+            <option >Java</option>
+            <option >JS</option>
+            <option >Python</option>
+    
+        </select>
+
+<button>Submit</button>
+<button>Reset</button>
+
+
+    </form>
+</center>
+
+
+4)Types of list are
+ ordered list
+unordered list
+description list
