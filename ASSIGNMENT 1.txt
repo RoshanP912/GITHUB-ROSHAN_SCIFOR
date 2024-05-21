@@ -1,0 +1,82 @@
+ASSIGNMENT 1:
+
+1)
+</head>
+ <style>
+        table {
+            background-color: grey;
+            border: 1px solid black;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+        }
+        table {
+            border-spacing: 2px;
+        }
+    </style>
+</head>
+
+
+<body>
+<table>
+<tr>
+    <th>STUDENT NO</th>
+    <th>STUDENT NAME</th>
+    <th>STUDENT COURSE</th>
+    <th>STUDENT FEES</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Deepak</td>
+    <td>Java</td>
+    <td>Rs15000</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Athul</td>
+    <td>Python</td>
+    <td>Rs2000</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Abhi</td>
+    <td>Javascript</td>
+    <td>Rs6000</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Peter</td>
+    <td>DSA</td>
+    <td>Rs4500</td>
+</tr>
+
+
+</table>
+    
+</body>
+
+
+2)
+
+<h4>Grocery Items</h4>
+    <ol type="I">
+       <li>Sugar</li>
+       <li>Coffee</li>
+       <li>Milk </li>
+    </ol>
+    <h4>Grocery Items</h4>
+    <ul style="list-style-type: none;">
+        <li>Sugar</li>
+        <li>Coffee</li>
+        <li>Milk </li>
+    </ul>
+    <dl>
+        <dt>Java</dt>
+        <dd>Java is a programming language</dd>
+        <dt>Angular</dt>
+        <dd>Angular is a framework</dd>
+    </dl>
