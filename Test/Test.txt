@@ -1,0 +1,66 @@
+1) Formatting tags are used to display different types of text.
+eg: <b>,<strong>
+
+
+2) We can merge rows using rowspan and merge columns using colspan
+
+   <center>
+        <table>
+            <tr>
+                <th>Name</tMh>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Deepak</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Diya</td>
+                <td>78</td>
+            </tr>
+ 
+            <tr>
+                <td colspan="2">Sum: 138</td>
+            </tr>
+        </table>
+    </center>
+
+
+
+    <table align="center">
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Deepak</td>
+ 
+            <td rowspan="2">44</td>
+        </tr>
+        <tr>
+            <td>Diya</td>
+        </tr>
+    </table>
+
+
+
+
+
+3) Cellpading is the space between cell edges and cell content
+Cellspacing is the space between each cell.
+
+
+4)Semantic elements tells the meaning to both the browser and developer 
+eg: <header> ,<nav>, <footer>
+
+5) <style>
+body{
+background-image:url
+}
+</style>
+
+
+6) Alt attribute is used to display whatever text we want, if an image is not able to be displayed in the html file.
+
+
+
