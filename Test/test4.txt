@@ -1,0 +1,320 @@
+1)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<nav>
+
+<div class="navbar">
+
+<a href="">Home</a>
+<a href="">About</a>
+<a href="">Address</a>
+<a href="">Contact</a>
+</div>
+
+
+<div class="navbar-right">
+  <input type="text" class="searchbar" placeholder="Search">
+  <i class="fa fa-user" style="font-size:24px"></i>
+  <div class="user-icon">👤</div>
+
+
+</div>
+</nav>
+
+
+<footer>
+this is footer
+</footer>
+  
+</body>
+</html>
+
+
+
+style.css
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-right{
+  display: flex;
+  justify-content: right;
+}
+
+nav{
+background-color: rgb(181, 145, 145);
+color: white;
+}
+
+footer{
+  bottom: 0;
+background-color: aquamarine;
+height: 50px;
+position: fixed;
+width: 100%;
+}
+
+
+
+
+2)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Product List</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <table>
+          <thead>
+              <tr>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Bread</td>
+                  <td>1000</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                  <td>Milk</td>
+                  <td>200</td>
+                  <td>2</td>
+              </tr>
+              <tr>
+                  <td>Pizza</td>
+                  <td>1500</td>
+                  <td>5</td>
+              </tr>
+          </tbody>
+          <tfoot>
+              <tr>
+                  <td colspan="1">Total </td>
+                  <td>2700</td>
+              </tr>
+          </tfoot>
+      </table>
+  </body>
+  </html>
+  
+</body>
+</html>
+
+
+
+style.css
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #c6d08a;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+
+
+
+3)
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title></title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+    <header>
+      <h1>Website</h1>
+  </header>
+
+
+  <nav class="navbar">
+      <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+  </nav>
+
+
+  <section class="content">
+      <h2>Welcome</h2>
+  </section>
+
+
+
+  <footer>
+      <p>Footer</p>
+  </footer>
+  </body>
+  </html>
+  
+</body>
+</html>
+
+
+style.css
+
+*{
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar {
+  background-color: #444;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar li {
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+
+  .navbar a {
+      padding: 10px;
+      font-size: 0.9em;
+  }
+
+  .content {
+      padding: 10px;
+  }
+
+  footer {
+      font-size: 0.8em;
+  }
+}
