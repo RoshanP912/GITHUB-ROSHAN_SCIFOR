@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form and Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <style>
+        body {
+            margin: 20px;
+        }
+        h2{
+            padding-left: 500px;
+        }
+        .form-container {
+            background-color: #dfe2c5;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 15px 10px rgba(0,0,0,0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        .table-container {
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+        th {
+            background-color: #284b29;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Register</h2>
+    <form>
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                    <label>Name
+                        <input type="text" placeholder="Enter your name" required>
+                    </label>
+                </div>
+             
+                <div class="medium-6 cell">
+                    <label>Password
+                        <input type="password" placeholder="Enter your password" required>
+                    </label>
+                </div>
+
+                <div class="medium-6 cell">
+                    <label>Email
+                        <input type="email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+              
+                <div class="medium-12 cell">
+                    <fieldset>
+                        <label>Interests</label>
+                        <input type="checkbox" id="sports" name="interests" value="cricket">
+                        <label for="sports">Cricket</label>
+                        <input type="checkbox" id="music" name="interests" value="yoga">
+                        <label for="music">Yoga</label>
+                        <input type="checkbox" id="reading" name="interests" value="sleeping">
+                        <label for="reading">Sleeping</label>
+                        <input type="checkbox" id="travel" name="interests" value="travel">
+                        <label for="travel">Travel</label>
+                    </fieldset>
+                </div>
+                <div class="medium-6 cell">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+                    </fieldset>
+                </div>
+                <div class="medium-12 cell">
+                    <button type="submit" class="button primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arjun</td>
+                <td>aaa@abc.com</td>
+                <td>Male</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Deepa</td>
+                <td>aaa@abc.com</td>
+                <td>Female</td>
+                <td>USA</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+</body>
+</html>
