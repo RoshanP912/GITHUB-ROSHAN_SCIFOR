@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+          <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="card">
+        <div class="card-header text-center">
+            <h2>Form</h2>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Interests</label><br>
+                    <input type="checkbox" id="sports" name="interests" value="cricket">
+                    <label for="sports">Cricket</label>
+                    <input type="checkbox" id="music" name="interests" value="yoga">
+                    <label for="music">Yoga</label>
+                    <input type="checkbox" id="reading" name="interests" value="sleeping">
+                    <label for="reading">Sleeping</label>
+                    <input type="checkbox" id="travel" name="interests" value="travel">
+                    <label for="travel">Travel</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+        </div>
+        <div class="card-footer text-center">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arjun</td>
+                        <td>aaa@abc.com</td>
+                        <td>Male</td>
+                        <td>India</td>
+                    </tr>
+                    <tr>
+                        <td>Deepa</td>
+                        <td>aaa@abc.com</td>
+                        <td>Female</td>
+                        <td>USA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+body {
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card-header, h2 {
+  background-color: #edd88d;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+}
+.card-body {
+  padding: 30px;
+}
+.form-group label {
+  font-weight: bold;
+}
+.form-check-label {
+  margin-left: 5px;
+}
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+.table thead {
+  background-color: #343a40;
+  color: #ffffff;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table tbody tr:hover {
+  background-color: #e9ecef;
+}
