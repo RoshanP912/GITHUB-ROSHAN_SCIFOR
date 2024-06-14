@@ -1,0 +1,50 @@
+1)
+
+let num1 = 10;
+let num2 = 5;
+
+let addition = num1 + num2;
+let subtraction = num1 - num2;
+let multiplication = num1 * num2;
+let division = num1 / num2;
+let remainder = num1 % num2;
+
+console.log(` ${num1} + ${num2} =${addition}`);
+console.log(`${num1} - ${num2} = ${subtraction}`);
+console.log(` ${num1} * ${num2} =${multiplication}`);
+console.log(` ${num1} / ${num2} = ${division}`);
+console.log(` ${num1} % ${num2} = ${remainder}`);
+
+
+
+2)
+
+function scope() {
+
+    for(let i=0;i<2;i++){
+        let a='hi'
+        var b= 'hello'
+        console.log(a);
+        console.log(b);
+        const c='fun'
+        console.log(c);
+    }
+
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+}
+
+scope();
+
+
+3)
+var stringVar = "Theyy"
+var numberVar = 2;
+var booleanVar = true;
+
+document.write("String" + stringVar );
+document.write("Number" + numberVar );
+document.write("Boolean" + booleanVar );
+
