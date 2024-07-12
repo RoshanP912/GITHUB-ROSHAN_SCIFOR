@@ -1,0 +1,93 @@
+
+1)
+import React from 'react';
+
+const UserDetails = ({ name, age, email, mobileNo, city }) => {
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+      <p>Email: {email}</p>
+      <p>Mobile No: {mobileNo}</p>
+      <p>City: {city}</p>
+    </div>
+  );
+};
+
+export default UserDetails;
+
+
+
+import React from 'react';
+import UserDetails from './UserDetails';
+
+const App = () => {
+  return (
+    <div>
+      <UserDetails
+        name="Roshan"
+        age={25}
+        email="roshan@Gmail.com"
+        mobileNo="123-456-7890"
+        city="Mumbai"
+      />
+    </div>
+  );
+};
+
+export default App;
+
+
+
+
+
+
+2)
+
+
+
+import React, { Component } from 'react';
+
+class Box extends Component {
+  render() {
+    const headingStyle = {
+      color: 'green',
+      fontSize: '28px',
+      textAlign: 'center',
+    };
+
+    const paragraphStyle = {
+      color: 'darkslategray',
+      fontSize: '18px',
+      margin: '10px 20px',
+    };
+
+    return (
+      <div>
+        <h1 style={headingStyle}>Welcome to Box</h1>
+        <p style={paragraphStyle}>
+          This is a paragraph within the Box component. It has different inline styles to make it look unique.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default Box;
+
+
+
+import React from 'react';
+import Box from './Box';
+
+const App = () => {
+  return (
+    <div>
+      <Box />
+    </div>
+  );
+};
+
+export default App;
+
+
