@@ -1,0 +1,73 @@
+function adjustDate(inputDate) {
+
+    let currentMonth = inputDate.getMonth() + 1; 
+
+    let nextMonth = (currentMonth % 12); 
+    let yearAdjustment = nextMonth === 0 ? 1 : 0;     inputDate.setMonth(nextMonth); 
+    inputDate.setFullYear(inputDate.getFullYear() + yearAdjustment); 
+
+     inputDate.setDate(15);
+
+       let adjustedYear = inputDate.getFullYear();
+
+      return {
+        adjustedDate: inputDate,
+        year: adjustedYear
+    };
+}
+
+
+
+2
+
+function countCharacters(charArray) {
+    const charCount = {};
+
+    charArray.forEach(char => {
+        if (charCount[char]) {
+            charCount[char]++;
+        } else {
+            charCount[char] = 1;
+        }
+    });
+
+    return charCount;
+}
+
+
+3
+
+function reverseAndSortArray(charArray) {
+    charArray.reverse();
+    charArray.sort();
+    return charArray;
+}
+
+
+4
+
+function formatString(inputString) {
+    const upperCaseString = inputString.toUpperCase();
+
+    const lowerCaseString = inputString.toLowerCase();
+
+    const substring = inputString.substring(2, 6);
+
+    return {
+        upperCaseString,
+        lowerCaseString,
+        substring
+    };
+}
+
+
+
+5
+
+function manipulateArray(stringArray) {
+    stringArray.push("VOLVO");
+    stringArray.pop();
+    const upperCaseArray = stringArray.map(element => element.toUpperCase());
+    const joinedString = upperCaseArray.join(',');
+    return joinedString;
+}
