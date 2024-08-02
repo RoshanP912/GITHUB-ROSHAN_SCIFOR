@@ -1,0 +1,23 @@
+1)
+
+RESTful API is an interface that two computer systems use to exchange information securely over the internet
+We implement RESTful APIs by using the Hypertext Transfer Protocol (HTTP). An HTTP method tells the server what it needs to do to the resource. The following are four common HTTP methods:
+GET,POST,PUT,DELETE
+
+2)
+
+function divideNumber() {
+    try {
+        let num1 = parseInt(prompt("Enter the first integer:"));
+        let num2 = parseInt(prompt("Enter the second integer:"));
+        if (num2 === 0) {
+            throw new Error("Division by zero is not allowed.");
+        }
+        let result = num1 / num2;
+        alert("The result of the division is: " + result);
+    } catch (error) {
+        alert("Error: " + error.message);
+    }
+}
+
+divideNumbers();
